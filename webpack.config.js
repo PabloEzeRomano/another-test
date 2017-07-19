@@ -12,7 +12,7 @@ let plugins = [];
 let outputFile;
 
 if (env === 'build') {
-  plugins.push(new UglifyJsPlugin({ minimize: true }));
+  plugins.push(new UglifyJsPlugin({minimize: true}));
   outputFile = `${libraryName}.min.js`;
 } else {
   outputFile = `${libraryName}.js`;
@@ -22,11 +22,11 @@ const config = {
   entry: `${__dirname}/src/index.js`,
   devtool: 'source-map',
   output: {
-    path: `${__dirname}/lib`,
-    filename: outputFile,
-    library: libraryName,
+    path: path.join(__dirname, './dist/'),
+    filename: 'widget.js',
+    library: ['MyLib'],
     libraryTarget: 'umd',
-    umdNamedDefine: true,
+    publicPath: '/dist/',
   },
   module: {
     rules: [

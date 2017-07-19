@@ -1,5 +1,5 @@
 {
-  "name": "webpack-library-starter",
+  "name": "another-webpack-library-test",
   "version": "0.1.0",
   "description": "Produce universal library with webpack and es6",
   "main": "lib/library.js",
@@ -22,7 +22,7 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
-    "extract-text-webpack-plugin": "^3.0.0",
+     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.6",
